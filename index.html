@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória</h1>
+        <div>
+            <label for="difficulty">Escolha a Dificuldade:</label>
+            <select id="difficulty">
+                <option value="easy">Fácil</option>
+                <option value="medium">Médio</option>
+                <option value="hard">Difícil</option>
+            </select>
+        </div>
+        <div>
+            <label for="theme">Escolha o Tema:</label>
+            <select id="theme">
+                <option value="animes">Animes</option>
+                <option value="fruits">Frutas</option>
+                <option value="animals">Animais</option>
+            </select>
+        </div>
+        <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+    <script>
+        function startGame() {
+            const difficulty = document.getElementById('difficulty').value;
+            const theme = document.getElementById('theme').value;
+            window.location.href = `game.html?difficulty=${difficulty}&theme=${theme}`;
+        }
+    </script>
+</body>
+</html>

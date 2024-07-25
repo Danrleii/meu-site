@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você Perdeu!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Que pena, você perdeu!</h1>
+        <button onclick="window.location.href='index.html'">Tentar Novamente</button>
+    </div>
+    <script>
+        const loseSound = new Audio('audio/lose.mp3');
+        loseSound.play();
+    </script>
+</body>
+</html>
+
